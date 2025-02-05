@@ -1,0 +1,79 @@
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("C:\Users\ntdai\OneDrive\Pictures\knife pic 4.heic");
+    background-size: cover;
+    padding: 20px;
+}
+/* Header Styling */
+
+
+nav {
+  background-color: #242222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 2000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+ 
+  .nav-left {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .nav-text {
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+  .nav-right {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .navbutton {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  
+
+/* Footer Styling */
+.footer {
+  background: #1f1d1d;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.footerText {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footerText {
+    text-decoration: none;
+    color: #fff;
+}
