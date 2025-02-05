@@ -1,14 +1,32 @@
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("C:\Users\ntdai\OneDrive\Pictures\knife pic 4.heic");
-    background-size: cover;
-    padding: 20px;
+.indexBody {
+  font-family: Arial, sans-serif;
+  background: url("websitewallpaer.jpg") no-repeat center top,
+    black no-repeat center bottom;
+  background-size: 100% auto; /* Makes sure both images are fully visible without overlap */
+  height: 200vh; /* Ensure there's enough space for scrolling both images */
+  padding: 20px;
+  background-attachment: scroll; /* Allow scrolling background */
+  transition: background-position 1s ease-in-out; /* Smooth transition */
 }
+
+.missionText {
+  position: absolute;
+  top: 150%; /* Position the text at the start of the second image */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjust the position to make it truly centered */
+  font-size: 60px; /* Adjust the size of the text */
+  color: white; /* Text color */
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: gives text a shadow to stand out more */
+  text-align: center;
+  z-index: 2; /* Make sure the text is above the background images */
+}
+
 /* Header Styling */
-
-
 nav {
   background-color: #242222;
   display: flex;
@@ -17,48 +35,69 @@ nav {
   border-radius: 0px;
   margin: 0 auto;
   padding: 10px 20px;
-  max-width: 2000px;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 }
- 
-  .nav-left {
-    display: flex;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .nav-text {
-    margin-right: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-  }
-  .nav-right {
-    display: flex;
-    color: #fff;
-    text-decoration: none;
-    justify-content: flex-end;
-    gap: 10px;
-  }
 
-  .navbutton {
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-  }
-  
+/* Header Styling */
+nav {
+  background-color: #242222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-text {
+  margin-right: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.nav-right {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.navbutton {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.navbutton:hover {
+  text-decoration: underline;
+}
 
 /* Footer Styling */
-.footer {
-  background: #1f1d1d;
+footer {
+  background: rgba(31, 29, 29, 0.8);
   color: #fff;
   text-align: center;
   padding: 0;
@@ -66,14 +105,17 @@ nav {
   bottom: 0;
   width: 100%;
   left: 0;
+  height: 90px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.footerText {
-  text-decoration: none;
-  color: #fff;
+.shopNowButton {
+  font-size: 50px;
+  background-color: gray;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.footerText {
-    text-decoration: none;
-    color: #fff;
+.shopNowButton:hover {
+  text-decoration: underline;
 }
