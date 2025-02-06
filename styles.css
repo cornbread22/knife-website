@@ -8,6 +8,14 @@
   background-attachment: scroll; /* Allow scrolling background */
   transition: background-position 1s ease-in-out; /* Smooth transition */
 }
+.contactBody {
+  background: url(contactus.jpg) no-repeat center top;
+background-size: 100% auto; /* Makes sure both images are fully visible without overlap */
+height: 200vh; /* Ensure there's enough space for scrolling both images */
+padding: 20px;
+background-attachment: scroll; /* Allow scrolling background */
+transition: background-position 1s ease-in-out; /* Smooth transition */
+}
 
 .missionText {
   position: absolute;
@@ -119,3 +127,28 @@ footer {
 .shopNowButton:hover {
   text-decoration: underline;
 }
+
+
+h1 {
+  font-family: "Times New Roman", Times, serif; /* Change to your desired font */
+  font-size: 70px; /* Change to your desired font size */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px; /* Adjusts the space below the h1 element */
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif; /* Change to your desired font */
+  font-size: 32px; /* Change to your desired font size */
+  text-align: center;
+  margin-top: 10px; /* Adjusts the space above the h2 element */
+  margin-bottom: 20px; /* Adjusts the space below the h2 element */
+  color: white;
+}
+
+h3 {
+  font-family: "Arial", sans-serif; /* Change to your desired font */
+  font-size: 20px; /* Change to your desired font size */
+  text-align: center;
+}
+
