@@ -7,7 +7,14 @@
 body {
   margin: 0;
   padding: 0;
+  margin-top: 70px;
   box-sizing: border-box;
+  min-height: calc(100dvh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: scroll; /* Allows vertical scrolling */
 }
 
 .indexBody {
@@ -22,7 +29,8 @@ body {
 .contactBody {
   background: url(contactus.jpg) no-repeat center top;
   background-size: 100% auto; /* Makes sure both images are fully visible without overlap */
-  height: 200vh; /* Ensure there's enough space for scrolling both images */
+  min-height: calc(100dvh - 70px);
+  height: fit-content; /* Ensure there's enough space for scrolling both images */
   padding: 20px;
   background-attachment: scroll; /* Allow scrolling background */
   transition: background-position 1s ease-in-out; /* Smooth transition */
