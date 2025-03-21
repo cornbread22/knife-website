@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neil's Knives- Home</title>
+    <title>Neil's Knives - Our Process</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,13 +12,31 @@
       rel="stylesheet"
     />
     <style>
+      footer {
+        background-color: rgba(31, 29, 29, 0.8);
+        color: white;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .footerText a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .footerText a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
-  <body>
+  <body style="background-color: black;">
     <header>
       <nav class="navbar">
         <div class="nav-left">
-          <span class="nav-text"> Neil's Knives</span>
+          <span class="nav-text">Neil's Knives</span>
         </div>
         <div class="nav-right">
           <a href="index.html" class="navbutton">Home</a>
@@ -26,24 +44,57 @@
           <a href="process.html" class="navbutton">Our Process</a>
           <a href="aboutUs.html" class="navbutton">About Us</a>
         </div>
-        </div>
       </nav>
     </header>
+
+    <main style="color: white;">
+      <section class="process-intro">
+        <h1 style="font-size: 50px;">Our Craftsmanship Process</h1>
+        <p>
+          At Neil's Knives, each knife is crafted with care and precision. We follow a meticulous process to ensure every blade is of the highest quality. Here's a glimpse into the steps that make our knives stand out.
+        </p>
+      </section>
+
+      <section class="process-steps">
+        <h2>Selecting Antlers</h2>
+        <p>
+          Our process begins with the selection of high-quality deer antlers. We carefully choose the antlers for their strength and beauty before cutting them into the perfect size for the handles.
+        </p>
+        <img src="knife pic 5.jpg" alt="Selecting and cutting deer antlers" class="process-image" style="width: 100%; max-width: 400px; height: auto;" />
+      </section>
+
+      <section class="process-steps">
+        <h2>Blade Treatment</h2>
+        <p>
+          We can treat our blades using either acid etching or stonewashing techniques. These methods help create a unique, durable finish that enhances the blade's look and functionality.
+        </p>
+        <img src="knife pic 5.jpg" alt="Blade treatment" class="process-image" style="width: 100%; max-width: 400px; height: auto;" />
+        <img src="knife pic 6.jpg" alt="Blade treatment" class="process-image" style="width: 100%; max-width: 400px; height: auto;" />
+      </section>
+
+      <section class="process-steps">
+        <h2>Shaping and Refining the Handles</h2>
+        <p>
+          Once the antlers are prepared, we shape and refine the handles to ensure they fit comfortably in the hand. This is done with great attention to detail to guarantee both aesthetic appeal and functionality.
+        </p>
+        <video src="VID_20250320_200413.mp4" alt="Shaping and refining the handles" class="process-image" style="width: 100%; max-width: 400px; height: auto;" />
+      </section>
+
+      <section class="process-steps">
+        <h2>Attaching Handles to Blades</h2>
+        <p>Finally, the handles are fixed to the blades using high-strength epoxy. This knife won't break on you. Guaranteed or your money back.</p>
+      </section>
+    </main>
+
     <footer>
       <p class="footerTitle">Neil's Knives</p>
       <p class="footerText">
-        <a href="contact.html" style="color: white; text-decoration: none"
-          >Contact</a
-        >
-        &nbsp;
-        <a href="aboutUs.html" style="color: white; text-decoration: none"
-          >About</a
-        >
-        &nbsp;
-        <a href="getYours.html" style="color: white; text-decoration: none"
-          >Buy Now</a
-        >
+        <a href="contact.html">Contact</a>
+        <a href="aboutUs.html">About</a>
+        <a href="getYours.html">Buy Now</a>
       </p>
     </footer>
+
+    <script src="function.js"></script>
   </body>
 </html>

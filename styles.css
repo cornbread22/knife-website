@@ -14,30 +14,29 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow-y: scroll; /* Allows vertical scrolling */
+  overflow-y: scroll; 
 }
 
 .indexBody {
   font-family: Arial, sans-serif;
-  height: fit-content; /* Ensure there's enough space for scrolling both images */
-  background-attachment: scroll; /* Allow scrolling background */
-  transition: background-position 1s ease-in-out; /* Smooth transition */
+  height: fit-content; 
+  background-attachment: scroll; 
+  transition: background-position 1s ease-in-out; 
   background: url("websitewallpaer.jpg") no-repeat center top,
     black no-repeat center bottom;
-  background-size: 100% auto; /* Makes sure both images are fully visible without overlap */
+  background-size: 100% auto; 
 }
 .contactBody {
   background: url(contactus.jpg) no-repeat center top;
-  background-size: 100% auto; /* Makes sure both images are fully visible without overlap */
+  background-size: 100% auto; 
   min-height: calc(100dvh - 70px);
-  height: fit-content; /* Ensure there's enough space for scrolling both images */
-  padding: 20px;
-  background-attachment: scroll; /* Allow scrolling background */
-  transition: background-position 1s ease-in-out; /* Smooth transition */
+  height: fit-content; 
+  background-attachment: scroll; 
+  transition: background-position 1s ease-in-out; 
 }
 
 .missionText {
-  z-index: 2; /* Make sure the text is above the background images */
+  z-index: 2; 
 }
 
 .missionText .missionTitle {
@@ -45,10 +44,13 @@ body {
   color: white; /* Text color */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: gives text a shadow to stand out more */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   text-align: left;
-  margin: 0 20px 20px 80px;
+  margin: 50px 20px 20px 80px;
 }
+
+
+
 
 /* Header Styling */
 nav {
@@ -137,23 +139,26 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Styling for the main text content on the home screen */
 .mainText {
   height: fit-content;
   min-height: 100dvh;
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif; /* Change to your desired font */
-  font-size: 32px; /* Change to your desired font size */
+  font-family: "Times New Roman", Times, serif; 
+  font-size: 32px;
   text-align: center;
-  margin-top: 10px; /* Adjusts the space above the h2 element */
-  margin-bottom: 20px; /* Adjusts the space below the h2 element */
+  margin-top: 10px; 
+  margin-bottom: 20px; 
   color: white;
 }
 
 h3 {
-  font-family: "Arial", sans-serif; /* Change to your desired font */
-  font-size: 20px; /* Change to your desired font size */
+  font-family: "Arial", sans-serif; 
+  font-size: 20px; 
   text-align: center;
 }
+
+ 
+
+
