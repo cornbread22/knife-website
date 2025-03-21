@@ -159,6 +159,19 @@ h3 {
   text-align: center;
 }
 
- 
-
-
+@media (width < 500px) {
+  /*
+   * Media queries allow you to apply different styles based on the characteristics of the device or screen being used to view the webpage.
+   * They consist of a media type (e.g., screen, print) and one or more media features (e.g., width, height, orientation) that must be true for the styles to be applied.
+   *
+   * Syntax:
+   * @media media-type and (media-feature) {
+   *   // CSS rules to apply when the media query is true
+   * }
+   *
+   * Example:
+   * @media screen and (max-width: 768px) {
+   *   // Styles for screens with a maximum width of 768 pixels
+   * }
+   */
+}
