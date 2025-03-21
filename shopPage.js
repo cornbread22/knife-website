@@ -38,7 +38,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Normal Carbon",
     description: "Clean and simple design, high edge retention",
     price: 59.99,
-    image: "./stainless.jpg",
+    image: "./images/stainless.jpg",
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
   },
