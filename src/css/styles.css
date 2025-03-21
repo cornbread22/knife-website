@@ -22,12 +22,12 @@ body {
   height: fit-content;
   background-attachment: scroll;
   transition: background-position 1s ease-in-out;
-  background: url("./images/websitewallpaer.jpg") no-repeat center top,
+  background: url("../../images/websitewallpaer.jpg") no-repeat center top,
     black no-repeat center bottom;
   background-size: 100% auto;
 }
 .contactBody {
-  background: url("./images/contactus.jpg") no-repeat center top;
+  background: url("../../images/contactus.jpg") no-repeat center top;
   background-size: 100% auto;
   min-height: calc(100dvh - 70px);
   height: fit-content;
