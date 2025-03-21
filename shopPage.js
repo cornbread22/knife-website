@@ -2,7 +2,7 @@
 const knives = [
   {
     id: 1,
-    name: "Chef's Knife",
+    name: "Deer Antler Mora #1 - Carbon  - Acid Etched",
     description: "Professional 8-inch chef's knife for all kitchen tasks",
     price: 89.99,
     image: "./carbonblackened.jpg",
@@ -11,7 +11,7 @@ const knives = [
   },
   {
     id: 2,
-    name: "Santoku Knife",
+    name: "Deer Antler Mora #1 - Carbon  - Stonewashed",
     description: "Japanese-style all-purpose kitchen knife with scalloped edge",
     price: 79.99,
     image: "./carbonstonewashed.jpg",
@@ -20,7 +20,7 @@ const knives = [
   },
   {
     id: 3,
-    name: "Bread Knife",
+    name: "Deer Antler Mora #1 - Carbon  - Stainless",
     description: "Serrated edge perfect for slicing bread without crushing",
     price: 49.99,
     image: "./stainless.jpg",
