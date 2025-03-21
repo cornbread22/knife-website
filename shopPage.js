@@ -7,6 +7,7 @@ const knives = [
     price: 89.99,
     image: "./carbonblackened.jpg",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const knives = [
     price: 79.99,
     image: "./carbonstonewashed.jpg",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ const knives = [
     price: 49.99,
     image: "./stainless.jpg",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ const knives = [
     price: 29.99,
     image: "./knife pic.png",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ const knives = [
     price: 39.99,
     image: "./knife-pic-4.png",
     category: "utility",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ const knives = [
     price: 59.99,
     image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Boning+Knife",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 7,
@@ -55,6 +61,7 @@ const knives = [
     price: 69.99,
     image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Cleaver",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 8,
@@ -63,6 +70,7 @@ const knives = [
     price: 45.99,
     image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Pocket+Knife",
     category: "utility",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
 ]
 
@@ -97,7 +105,7 @@ function renderKnives(knivesToRender) {
         <h2 class="knife-title">${knife.name}</h2>
         <p class="knife-description">${knife.description}</p>
         <p class="knife-price">$${knife.price.toFixed(2)}</p>
-        <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer" class="buy-button">
+        <a href=${knife.link} target="_blank" rel="noopener noreferrer" class="buy-button">
           Buy on Etsy
           <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
