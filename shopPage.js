@@ -6,7 +6,7 @@ const knives = [
     description: "High edge retention for cutting tasks",
     price: 79.99,
     image: "./carbonblackened.jpg",
-    category: "hunting",
+    category: "kitchen",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const knives = [
     description: "Beautiful stonewashed finish",
     price: 89.99,
     image: "./carbonstonewashed.jpg",
-    category: "hunting",
+    category: "kitchen",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const knives = [
     description: "high corrosion resistance",
     price: 79.99,
     image: "./stainless.jpg",
-    category: "fishing",
+    category: "kitchen",
   },
   {
     id: 4,
@@ -31,8 +31,40 @@ const knives = [
     price: 89.99,
     image: "./knife pic.png",
     category: "kitchen",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
- 
+  {
+    id: 5,
+    name: "Utility Knife",
+    description: "Versatile medium-sized knife for various cutting tasks",
+    price: 39.99,
+    image: "./knife-pic-4.png",
+    category: "utility",
+  },
+  {
+    id: 6,
+    name: "Boning Knife",
+    description: "Flexible blade designed for separating meat from bone",
+    price: 59.99,
+    image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Boning+Knife",
+    category: "kitchen",
+  },
+  {
+    id: 7,
+    name: "Cleaver",
+    description: "Heavy-duty knife for chopping through bones and tough materials",
+    price: 69.99,
+    image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Cleaver",
+    category: "kitchen",
+  },
+  {
+    id: 8,
+    name: "Pocket Knife",
+    description: "Compact folding knife for everyday carry and outdoor use",
+    price: 45.99,
+    image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Pocket+Knife",
+    category: "utility",
+  },
 ]
 
 // DOM elements
@@ -66,7 +98,7 @@ function renderKnives(knivesToRender) {
         <h2 class="knife-title">${knife.name}</h2>
         <p class="knife-description">${knife.description}</p>
         <p class="knife-price">$${knife.price.toFixed(2)}</p>
-        <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer" class="buy-button">
+        <a href=${knife.link} target="_blank" rel="noopener noreferrer" class="buy-button">
           Buy on Etsy
           <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
