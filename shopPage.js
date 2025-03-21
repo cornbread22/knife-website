@@ -6,7 +6,7 @@ const knives = [
     description: "High edge retention for cutting tasks",
     price: 79.99,
     image: "./carbonblackened.jpg",
-    category: "kitchen",
+    category: "hunting",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const knives = [
     description: "Beautiful stonewashed finish",
     price: 89.99,
     image: "./carbonstonewashed.jpg",
-    category: "kitchen",
+    category: "hunting",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const knives = [
     description: "high corrosion resistance",
     price: 79.99,
     image: "./stainless.jpg",
-    category: "kitchen",
+    category: "fishing",
   },
   {
     id: 4,
@@ -33,38 +33,7 @@ const knives = [
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
   },
-  {
-    id: 5,
-    name: "Utility Knife",
-    description: "Versatile medium-sized knife for various cutting tasks",
-    price: 39.99,
-    image: "./knife-pic-4.png",
-    category: "utility",
-  },
-  {
-    id: 6,
-    name: "Boning Knife",
-    description: "Flexible blade designed for separating meat from bone",
-    price: 59.99,
-    image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Boning+Knife",
-    category: "kitchen",
-  },
-  {
-    id: 7,
-    name: "Cleaver",
-    description: "Heavy-duty knife for chopping through bones and tough materials",
-    price: 69.99,
-    image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Cleaver",
-    category: "kitchen",
-  },
-  {
-    id: 8,
-    name: "Pocket Knife",
-    description: "Compact folding knife for everyday carry and outdoor use",
-    price: 45.99,
-    image: "https://placehold.co/300x300/1e1e1e/cccccc?text=Pocket+Knife",
-    category: "utility",
-  },
+ 
 ]
 
 // DOM elements
