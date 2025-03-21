@@ -5,7 +5,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Carbon  - Acid Etched",
     description: "High edge retention for cutting tasks",
     price: 79.99,
-    image: "./carbonblackened.jpg",
+    image: "./images/carbonblackened.jpg",
     category: "hunting",
   },
   {
@@ -13,7 +13,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Carbon  - Stonewashed",
     description: "Beautiful stonewashed finish",
     price: 89.99,
-    image: "./carbonstonewashed.jpg",
+    image: "./images/carbonstonewashed.jpg",
     category: "hunting",
   },
   {
@@ -21,7 +21,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Stainless",
     description: "high corrosion resistance",
     price: 79.99,
-    image: "./stainless.jpg",
+    image: "./images/stainless.jpg",
     category: "fishing",
   },
   {
@@ -29,7 +29,7 @@ const knives = [
     name: "Deer Antler Handle Payne Bros Custom Knives Blade",
     description: "Custom made knife - you pick the blade style",
     price: 89.99,
-    image: "./knife pic 2short.jpg",
+    image: "./images/knife pic 2short.jpg",
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
   },

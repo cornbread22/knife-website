@@ -14,29 +14,29 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 .indexBody {
   font-family: Arial, sans-serif;
-  height: fit-content; 
-  background-attachment: scroll; 
-  transition: background-position 1s ease-in-out; 
-  background: url("websitewallpaer.jpg") no-repeat center top,
+  height: fit-content;
+  background-attachment: scroll;
+  transition: background-position 1s ease-in-out;
+  background: url("./images/websitewallpaer.jpg") no-repeat center top,
     black no-repeat center bottom;
-  background-size: 100% auto; 
+  background-size: 100% auto;
 }
 .contactBody {
-  background: url(contactus.jpg) no-repeat center top;
-  background-size: 100% auto; 
+  background: url("./images/contactus.jpg") no-repeat center top;
+  background-size: 100% auto;
   min-height: calc(100dvh - 70px);
-  height: fit-content; 
-  background-attachment: scroll; 
-  transition: background-position 1s ease-in-out; 
+  height: fit-content;
+  background-attachment: scroll;
+  transition: background-position 1s ease-in-out;
 }
 
 .missionText {
-  z-index: 2; 
+  z-index: 2;
 }
 
 .missionText .missionTitle {
@@ -48,9 +48,6 @@ body {
   text-align: left;
   margin: 50px 20px 20px 80px;
 }
-
-
-
 
 /* Header Styling */
 nav {
@@ -145,17 +142,17 @@ footer a:hover {
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif; 
+  font-family: "Times New Roman", Times, serif;
   font-size: 32px;
   text-align: center;
-  margin-top: 10px; 
-  margin-bottom: 20px; 
+  margin-top: 10px;
+  margin-bottom: 20px;
   color: white;
 }
 
 h3 {
-  font-family: "Arial", sans-serif; 
-  font-size: 20px; 
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
   text-align: center;
 }
 
