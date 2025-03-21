@@ -238,14 +238,16 @@ h1 {
 }
 
 @media (min-width: 1024px) {
+  /* Keep the grid at 2 columns instead of changing to 3 */
   .knives-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
+  /* Keep the grid at 2 columns instead of changing to 4 */
   .knives-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
