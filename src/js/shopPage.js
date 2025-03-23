@@ -5,7 +5,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Carbon  - Acid Etched",
     description: "High edge retention for cutting tasks",
     price: 79.99,
-    image: "../../images/carbonblackened.jpg",
+    image: "../../images/carbonblackened.jpg", // Path is correct relative to HTML file location
     category: "hunting",
   },
   {
