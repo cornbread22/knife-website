@@ -22,15 +22,10 @@ body {
   height: fit-content;
   background-attachment: scroll;
   transition: background-position 1s ease-in-out;
-<<<<<<< HEAD:styles.css
-  background: url("./images/websitewallpaer.jpg") no-repeat center top, black no-repeat center bottom;
-  background-size: 100% auto;
-=======
   background: url("../../images/websitewallpaer.jpg") no-repeat center top,
     black no-repeat center bottom;
   background-size: 110% auto;
   background-position: -40px 0px;
->>>>>>> ce55355d16d331ec10b2540ac0c1da406319eef8:src/css/styles.css
 }
 .contactBody {
   background: url("../../images/contactus.jpg") no-repeat center top;
@@ -83,6 +78,8 @@ nav {
   margin-right: 20px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
+  position: relative;
+  z-index: 1000;
 }
 
 .nav-right {
