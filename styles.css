@@ -195,6 +195,13 @@ h3 {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  /* Change background image for mobile */
+  .indexBody {
+    background: url("./images/wallpapertopographic.JPG") no-repeat center top, black no-repeat center bottom;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
   /* Navigation */
   .nav-right {
     position: fixed;
@@ -254,7 +261,6 @@ h3 {
   }
 
   /* Background images */
-  .indexBody,
   .contactBody {
     background-size: cover;
   }

@@ -26,6 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
     navText.appendChild(pageIndicator)
   }
 
+  // Check if we need to switch background image based on screen width
+  const checkBackgroundImage = () => {
+    const indexBody = document.querySelector(".indexBody")
+    if (indexBody) {
+      if (window.innerWidth <= 768) {
+        indexBody.style.backgroundImage = "url('./images/wallpapertopographic.JPG'), none"
+      } else {
+        indexBody.style.backgroundImage = "url('./images/websitewallpaer.jpg'), none"
+      }
+    }
+  }
+
+  // Run on page load
+  checkBackgroundImage()
+
+  // Run on window resize
+  window.addEventListener("resize", checkBackgroundImage)
+
   if (menuToggle && navRight) {
     // Make sure the menu toggle is visible and clickable
     menuToggle.style.display = window.innerWidth <= 768 ? "block" : "none"
