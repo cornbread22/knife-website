@@ -130,6 +130,7 @@ h1 {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  background-color: #f0f0f0;
 }
 
 .knife-image {
@@ -238,16 +239,31 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-  /* Keep the grid at 2 columns instead of changing to 3 */
   .knives-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1280px) {
-  /* Keep the grid at 2 columns instead of changing to 4 */
-  .knives-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 639px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .knife-title {
+    font-size: 1.1rem;
+  }
+
+  .knife-price {
+    font-size: 1.1rem;
+  }
+
+  .buy-button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* Improve image display on mobile */
+  .knife-image-container {
+    aspect-ratio: 4 / 3;
   }
 }
-

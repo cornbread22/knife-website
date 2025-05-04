@@ -7,6 +7,7 @@ const knives = [
     price: 79.99,
     image: "./images/carbonblackened.jpg",
     category: "hunting",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 2,
@@ -15,21 +16,23 @@ const knives = [
     price: 89.99,
     image: "./images/carbonstonewashed.jpg",
     category: "hunting",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 3,
     name: "Deer Antler Mora #1 - Stainless",
-    description: "high corrosion resistance",
+    description: "High corrosion resistance",
     price: 79.99,
-    image: "./images/stainless.jpg",
+    image: "./images/knife-pic-4.png",
     category: "fishing",
+    link: "https://www.etsy.com/shop/YourShopName",
   },
   {
     id: 4,
     name: "Deer Antler Handle Payne Bros Custom Knives Blade",
     description: "Custom made knife - you pick the blade style",
     price: 89.99,
-    image: "./images/knife pic 2short.jpg",
+    image: "./images/knife pic 2.jpg",
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
   },
@@ -38,11 +41,10 @@ const knives = [
     name: "Deer Antler Mora #1 - Normal Carbon",
     description: "Clean and simple design, high edge retention",
     price: 59.99,
-    image: "./images/stainless.jpg",
+    image: "./images/carbonblackened.jpg",
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
   },
- 
 ]
 
 // DOM elements
@@ -70,13 +72,13 @@ function renderKnives(knivesToRender) {
 
     knifeCard.innerHTML = `
       <div class="knife-image-container">
-        <img src="${knife.image}" alt="${knife.name}" class="knife-image">
+        <img src="${knife.image}" alt="${knife.name}" class="knife-image" loading="lazy">
       </div>
       <div class="knife-content">
         <h2 class="knife-title">${knife.name}</h2>
         <p class="knife-description">${knife.description}</p>
         <p class="knife-price">$${knife.price.toFixed(2)}</p>
-        <a href=${knife.link} target="_blank" rel="noopener noreferrer" class="buy-button">
+        <a href="${knife.link}" target="_blank" rel="noopener noreferrer" class="buy-button">
           Buy on Etsy
           <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -124,4 +126,3 @@ sortSelect.addEventListener("change", filterAndSortKnives)
 document.addEventListener("DOMContentLoaded", () => {
   filterAndSortKnives()
 })
-

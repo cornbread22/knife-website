@@ -22,8 +22,7 @@ body {
   height: fit-content;
   background-attachment: scroll;
   transition: background-position 1s ease-in-out;
-  background: url("./images/websitewallpaer.jpg") no-repeat center top,
-    black no-repeat center bottom;
+  background: url("./images/websitewallpaer.jpg") no-repeat center top, black no-repeat center bottom;
   background-size: 100% auto;
 }
 .contactBody {
@@ -37,6 +36,7 @@ body {
 
 .missionText {
   z-index: 2;
+  width: 100%;
 }
 
 .missionText .missionTitle {
@@ -101,6 +101,17 @@ nav {
   text-decoration: underline;
 }
 
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
 /* Footer Styling */
 footer {
   background: rgba(31, 29, 29, 0.8);
@@ -139,6 +150,8 @@ footer a:hover {
 .mainText {
   height: fit-content;
   min-height: 100dvh;
+  width: 100%;
+  padding: 0 20px;
 }
 
 h2 {
@@ -156,19 +169,126 @@ h3 {
   text-align: center;
 }
 
-@media (width < 500px) {
-  /*
-   * Media queries allow you to apply different styles based on the characteristics of the device or screen being used to view the webpage.
-   * They consist of a media type (e.g., screen, print) and one or more media features (e.g., width, height, orientation) that must be true for the styles to be applied.
-   *
-   * Syntax:
-   * @media media-type and (media-feature) {
-   *   // CSS rules to apply when the media query is true
-   * }
-   *
-   * Example:
-   * @media screen and (max-width: 768px) {
-   *   // Styles for screens with a maximum width of 768 pixels
-   * }
-   */
+/* Process page styling */
+.process-steps {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.process-image {
+  display: block;
+  margin: 20px auto;
+}
+
+.paragraph {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-right {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #242222;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-right.active {
+    transform: translateY(0);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-text {
+    font-size: 24px;
+  }
+
+  /* Typography */
+  .missionText .missionTitle {
+    font-size: 40px;
+    margin: 30px 15px 15px 20px;
+  }
+
+  h1 {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Layout */
+  .missionText p {
+    font-size: 16px !important;
+    width: 90% !important;
+    margin: 0 auto 20px !important;
+    text-align: center !important;
+  }
+
+  .shopNowButton {
+    font-size: 24px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Background images */
+  .indexBody,
+  .contactBody {
+    background-size: cover;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Typography */
+  .missionText .missionTitle {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  /* Layout */
+  .missionText p {
+    font-size: 14px !important;
+    width: 95% !important;
+  }
+
+  /* Navigation */
+  .navbutton {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .nav-text {
+    font-size: 20px;
+  }
+
+  /* Process page */
+  .process-image {
+    width: 100% !important;
+  }
+
+  .paragraph {
+    font-size: 16px !important;
+  }
 }
