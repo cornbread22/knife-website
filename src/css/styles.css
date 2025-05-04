@@ -22,11 +22,18 @@ body {
   height: fit-content;
   background-attachment: scroll;
   transition: background-position 1s ease-in-out;
+<<<<<<< HEAD:styles.css
   background: url("./images/websitewallpaer.jpg") no-repeat center top, black no-repeat center bottom;
   background-size: 100% auto;
+=======
+  background: url("../../images/websitewallpaer.jpg") no-repeat center top,
+    black no-repeat center bottom;
+  background-size: 110% auto;
+  background-position: -40px 0px;
+>>>>>>> ce55355d16d331ec10b2540ac0c1da406319eef8:src/css/styles.css
 }
 .contactBody {
-  background: url("./images/contactus.jpg") no-repeat center top;
+  background: url("../../images/contactus.jpg") no-repeat center top;
   background-size: 100% auto;
   min-height: calc(100dvh - 70px);
   height: fit-content;
@@ -78,13 +85,6 @@ nav {
   font-size: 30px;
 }
 
-.page-indicator {
-  font-size: 0.8em;
-  opacity: 0.8;
-  font-style: italic;
-  font-family: Arial, sans-serif;
-}
-
 .nav-right {
   display: flex;
   color: #fff;
@@ -117,7 +117,6 @@ nav {
   font-size: 24px;
   cursor: pointer;
   padding: 5px;
-  z-index: 1001; /* Ensure it's above other elements */
 }
 
 /* Footer Styling */
@@ -217,11 +216,10 @@ h3 {
 
   .menu-toggle {
     display: block;
-    position: relative; /* Ensure proper positioning */
   }
 
   .nav-text {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   /* Typography */
@@ -289,7 +287,7 @@ h3 {
   }
 
   .nav-text {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   /* Process page */
