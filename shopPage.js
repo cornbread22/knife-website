@@ -28,10 +28,11 @@ const knives = [
     link: "https://www.etsy.com/shop/YourShopName",
   },
   {
+    
     id: 4,
-    name: "Deer Antler Handle Payne Bros Custom Knives Blade",
-    description: "Custom made knife - you pick the blade style",
-    price: 89.99,
+    name: "Custom Knife Order",
+    description: "Custom made knife - you pick the blade style, handle, and sheath - Starts at $100",
+    price: 100,
     image: "./images/knife pic 2.jpg",
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
