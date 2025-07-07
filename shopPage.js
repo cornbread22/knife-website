@@ -5,7 +5,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Carbon  - Acid Etched",
     description: "High edge retention for cutting tasks",
     price: 85.99,
-    image: "../../images/carbonblackened.jpg", // Path is correct relative to HTML file location
+    image: "./images/carbonblackened.jpg",
     category: "hunting",
     link: "https://www.etsy.com/shop/YourShopName",
   },
@@ -14,7 +14,7 @@ const knives = [
     name: "Deer Antler Mora #1 - Carbon  - Stonewashed",
     description: "Beautiful stonewashed finish",
     price: 90.99,
-    image: "../../images/carbonstonewashed.jpg",
+    image: "./images/carbonstonewashed.jpg",
     category: "hunting",
     link: "https://www.etsy.com/shop/YourShopName",
   },
@@ -23,25 +23,26 @@ const knives = [
     name: "Deer Antler Mora #1 - Stainless",
     description: "High corrosion resistance",
     price: 81.99,
-    image: "./images/knife-pic-4.png",
+    image: "images/stainless.jpg",
     category: "fishing",
     link: "https://www.etsy.com/shop/YourShopName",
   },
   {
+    
     id: 4,
     name: "Custom Knife Order",
-    description: "Custom made knife - you pick the blade style",
-    price: 89.99,
+    description: "Custom made knife - you pick the blade style, handle, and sheath - Starts at $100",
+    price: 100,
     image: "./images/knife pic 2.jpg",
     category: "kitchen",
-    link: "https://www.etsy.com/shop/YourShopName",
+    link: "mailto:ntdaigle22@gmail.com?subject=Custom Knife Order&body= Please provide details on your order. Include blade style, handle preferences, and any other specifications you have in mind. I will get back to you with a quote and timeline for your custom knife.",
   },
   {
     id: 5,
     name: "Deer Antler Mora #1 - Normal Carbon",
     description: "Clean and simple design, high edge retention",
     price: 80.99,
-    image: "./images/carbonblackened.jpg",
+    image: "images/stainless.jpg",
     category: "kitchen",
     link: "https://www.etsy.com/shop/YourShopName",
   },
@@ -72,20 +73,20 @@ function renderKnives(knivesToRender) {
 
     knifeCard.innerHTML = `
       <div class="knife-image-container">
-        <img src="${knife.image}" alt="${knife.name}" class="knife-image" loading="lazy">
+      <img src="${knife.image}" alt="${knife.name}" class="knife-image" loading="lazy">
       </div>
       <div class="knife-content">
-        <h2 class="knife-title">${knife.name}</h2>
-        <p class="knife-description">${knife.description}</p>
-        <p class="knife-price">$${knife.price.toFixed(2)}</p>
-        <a href="${knife.link}" target="_blank" rel="noopener noreferrer" class="buy-button">
-          Buy on Etsy
-          <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-        </a>
+      <h2 class="knife-title">${knife.name}</h2>
+      <p class="knife-description">${knife.description}</p>
+      <p class="knife-price">$${knife.price.toFixed(2)}</p>
+      <a href="${knife.link}" target="_blank" rel="noopener noreferrer" class="buy-button">
+        ${knife.name === "Custom Knife Order" ? "Send Email Order" : "Buy Now"}
+        <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 1 1 2-2h6"></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
       </div>
     `
 
