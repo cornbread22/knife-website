@@ -309,4 +309,17 @@ h3 {
   .paragraph {
     font-size: 16px !important;
   }
+
+  .column {
+ flex:33.33%;
+  padding: 5px;
+  width: 50%;
 }
+
+.row {
+  display: flex;
+
+}
+  
+}
+
