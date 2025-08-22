@@ -22,7 +22,8 @@ body {
   height: fit-content;
   background-attachment: scroll;
   transition: background-position 1s ease-in-out;
-  background: url("./images/websitewallpaer.jpg") no-repeat center top, black no-repeat center bottom;
+  background: url("./images/websitewallpaer.jpg") no-repeat center top,
+    black no-repeat center bottom;
   background-size: 100% auto;
 }
 .contactBody {
@@ -195,11 +196,22 @@ h3 {
   margin: 0 auto 20px;
 }
 
+.column {
+  flex: 33.33%;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   /* Change background image for mobile */
   .indexBody {
-    background: url("./images/wallpapertopographic.JPG") no-repeat center top, black no-repeat center bottom;
+    background: url("./images/wallpapertopographic.JPG") no-repeat center top,
+      black no-repeat center bottom;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -309,17 +321,4 @@ h3 {
   .paragraph {
     font-size: 16px !important;
   }
-
-  .column {
- flex:33.33%;
-  padding: 5px;
-  width: 50%;
 }
-
-.row {
-  display: flex;
-
-}
-  
-}
-
