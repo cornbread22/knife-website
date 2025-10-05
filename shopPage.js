@@ -35,7 +35,7 @@ const knives = [
     price: 100,
     image: "./images/knife pic 2.jpg",
     category: "kitchen",
-    link: "mailto:ntdaigle22@gmail.com?subject=Custom Knife Order&body= Please provide details on your order. Include blade style, handle preferences, and any other specifications you have in mind. I will get back to you with a quote and timeline for your custom knife.",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeVUfHRN_01XrYDycaviFgWnkhjpnj1ObcBHddY2kRt47xd3w/viewform?usp=dialog Order&body= Please provide details on your order. Include blade style, handle preferences, and any other specifications you have in mind. I will get back to you with a quote and timeline for your custom knife.",
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ function renderKnives(knivesToRender) {
       <p class="knife-description">${knife.description}</p>
       <p class="knife-price">$${knife.price.toFixed(2)}</p>
       <a href="${knife.link}" target="_blank" rel="noopener noreferrer" class="buy-button">
-        ${knife.name === "Custom Knife Order" ? "Send Email Order" : "Buy Now"}
+        ${knife.name === "Custom Knife Order" ? "Send Order" : "Buy Now"}
         <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 1 1 2-2h6"></path>
         <polyline points="15 3 21 3 21 9"></polyline>
