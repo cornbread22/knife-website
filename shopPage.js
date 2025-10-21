@@ -7,7 +7,7 @@ const knives = [
     price: 85.99,
     image: "./images/carbonblackened.jpg",
     category: "hunting",
-    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const knives = [
     price: 90.99,
     image: "./images/carbonstonewashed.jpg",
     category: "hunting",
-    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const knives = [
     price: 81.99,
     image: "images/stainless.jpg",
     category: "fishing",
-    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
   },
   {
     
@@ -44,7 +44,7 @@ const knives = [
     price: 80.99,
     image: "images/stainless.jpg",
     category: "kitchen",
-    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
   },
 ]
 
