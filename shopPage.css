@@ -108,11 +108,12 @@ h1 {
   cursor: pointer;
 }
 
-/* Knives Grid */
+/* Knives Grid - responsive grid for all screens */
 .knives-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  width: 100%;
 }
 
 /* Knife Card */
@@ -125,13 +126,20 @@ h1 {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border-color);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.knife-card:hover {
+  transform: translateY(-4px);
 }
 
 .knife-image-container {
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4/3;
   overflow: hidden;
   background-color: #f0f0f0;
+  width: 100%;
 }
 
 .knife-image {
@@ -145,11 +153,25 @@ h1 {
   transform: scale(1.05);
 }
 
+.sold-out-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(200, 0, 0, 0.85);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9em;
+  z-index: 2;
+}
+
 .knife-content {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  text-align: center;
 }
 
 .knife-title {
@@ -170,6 +192,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* Buttons */
 .buy-button {
   display: flex;
   align-items: center;
@@ -189,6 +212,12 @@ h1 {
 
 .buy-button:hover {
   background-color: var(--primary-hover);
+}
+
+.buy-button.disabled {
+  background-color: #888;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .external-link-icon {
@@ -211,11 +240,12 @@ h1 {
   color: var(--text-secondary);
 }
 
+/* Hidden helper class */
 .hidden {
   display: none;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (min-width: 640px) {
   .filters {
     flex-direction: row;
@@ -232,16 +262,6 @@ h1 {
 
   #sort-select {
     width: 180px;
-  }
-
-  .knives-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .knives-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -266,24 +286,5 @@ h1 {
   /* Improve image display on mobile */
   .knife-image-container {
     aspect-ratio: 4 / 3;
-  }
-
-  .sold-out-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(200, 0, 0, 0.85);
-    color: white;
-    padding: 5px 10px;
-    font-size: 0.9em;
-    font-weight: 600;
-    border-radius: 4px;
-    z-index: 2;
-  }
-
-  .buy-button.disabled {
-    background-color: gray;
-    cursor: not-allowed;
-    pointer-events: none;
   }
 }

@@ -18,7 +18,7 @@ const knives = [
     image: "./images/carbonstonewashed.jpg",
     category: "hunting",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const knives = [
     image: "images/stainless.jpg",
     category: "fishing",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
-    inStock: false,
+    inStock: true,
   },
   {
     id: 1,
@@ -88,11 +88,6 @@ function renderKnives(knivesToRender) {
         <a href="${knife.inStock ? knife.link : '#'}" target="_blank" rel="noopener noreferrer" 
           class="buy-button ${knife.inStock ? '' : 'disabled'}">
           ${knife.inStock ? (knife.name === "Custom Knife Order" ? "Send Order" : "Buy Now") : "Out of Stock"}
-          <svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 1 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
         </a>
       </div>
     `
@@ -113,13 +108,9 @@ function filterAndSortKnives() {
   )
 
   const sortedKnives = [...filteredKnives].sort((a, b) => {
-    if (sortBy === "price-low") {
-      return a.price - b.price
-    } else if (sortBy === "price-high") {
-      return b.price - a.price
-    } else if (sortBy === "name") {
-      return a.name.localeCompare(b.name)
-    }
+    if (sortBy === "price-low") return a.price - b.price
+    if (sortBy === "price-high") return b.price - a.price
+    if (sortBy === "name") return a.name.localeCompare(b.name)
     return 0
   })
 
@@ -129,8 +120,4 @@ function filterAndSortKnives() {
 // Event listeners
 searchInput.addEventListener("input", filterAndSortKnives)
 sortSelect.addEventListener("change", filterAndSortKnives)
-
-// Initial render
-document.addEventListener("DOMContentLoaded", () => {
-  filterAndSortKnives()
-})
+document.addEventListener("DOMContentLoaded", () => filterAndSortKnives())
