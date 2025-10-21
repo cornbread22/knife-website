@@ -1,13 +1,13 @@
 // Knife data
 const knives = [
   {
-    id: 1,
+    id: 2,
     name: "Deer Antler Mora #1 - Carbon  - Acid Etched",
     description: "High edge retention for cutting tasks",
     price: 85.99,
     image: "./images/carbonblackened.jpg",
     category: "hunting",
-    link: "https://www.etsy.com/shop/YourShopName",
+    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const knives = [
     price: 90.99,
     image: "./images/carbonstonewashed.jpg",
     category: "hunting",
-    link: "https://www.etsy.com/shop/YourShopName",
+    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
   },
   {
     id: 3,
@@ -25,11 +25,11 @@ const knives = [
     price: 81.99,
     image: "images/stainless.jpg",
     category: "fishing",
-    link: "https://www.etsy.com/shop/YourShopName",
+    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
   },
   {
     
-    id: 4,
+    id: 1,
     name: "Custom Knife Order",
     description: "Custom made knife - you pick the blade style, handle, and sheath - Starts at $100",
     price: 100,
@@ -44,7 +44,7 @@ const knives = [
     price: 80.99,
     image: "images/stainless.jpg",
     category: "kitchen",
-    link: "https://www.etsy.com/shop/YourShopName",
+    link: "https://docs.google.com/forms/d/1BVMnleN46hYG5iNpsqCnpP09d8MDMwAwIUPHmdQFDIw/edit#settings",
   },
 ]
 
