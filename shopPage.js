@@ -18,7 +18,7 @@ const knives = [
     image: "./images/carbonstonewashed.jpg",
     category: "hunting",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
-    inStock: false,
+    inStock: true,
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const knives = [
     image: "images/stainless.jpg",
     category: "fishing",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSdz1-XIVMojkicLcM5Kxq2DZI5es_InHvXyFyVdGvK5YvvFuA/viewform?usp=header",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 1,
